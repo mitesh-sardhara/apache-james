@@ -15,7 +15,7 @@ git clone https://github.com/mitesh-sardhara/apache-james
 
 4] Run start-setup 
 
-##./start-setup.sh
+./start-setup.sh
 
 
 5] Check for list of domains

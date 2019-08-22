@@ -50,6 +50,7 @@ docker exec -it james java -jar /root/james-cli.jar adduser admin@example.com ad
 # Follow below steps to configure Thunderbird Mail 
 
 1] Edit the file etc/hosts to add the number of domains in it and below is an example :
+   
    Ex:
        127.0.0.1       example.com
        
@@ -58,12 +59,12 @@ docker exec -it james java -jar /root/james-cli.jar adduser admin@example.com ad
        127.0.0.1       pop3.example.com
        
        127.0.0.1       imap.example.com
-       
- 2] Now, open the Thunderbird and add new mail account
  
- 3] Enter you email Id and password and then just click on connect. So by this way we need to connect as many users we had created above
  
- 4] Now you can send emails to other users of different domains 
+ 2] Configure the account in Thunderbird
+ 
+ 
+ 3] Follow the steps to add multiple domains & configure to thunderbird and try to send and receive emails from accounts. 
  
  
 

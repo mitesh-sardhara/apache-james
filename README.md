@@ -3,10 +3,12 @@ Apache James - Base Development Docker Setup
 
 # Follow the steps.
 1] Clone git repo inside 'james' folder. So the structure will be james/james-project
+
 git clone https://github.com/apache/james-project.git
 
 
 2] Clone this git repo anywhere and put .sh files inside 'script' folder. So, the structure will be james/script
+
 git clone https://github.com/mitesh-sardhara/apache-james
 
 

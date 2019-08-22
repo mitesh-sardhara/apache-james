@@ -15,7 +15,7 @@ git clone https://github.com/mitesh-sardhara/apache-james
 3] Change the path of working directory in start-setup.sh file
 
 
-4] Run start-setup 
+4] Run start-setup to start all services
 
 ./start-setup.sh
 

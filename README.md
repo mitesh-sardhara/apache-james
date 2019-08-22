@@ -28,7 +28,7 @@ git clone https://github.com/mitesh-sardhara/apache-james
 docker exec -it james java -jar /root/james-cli.jar adddomain example.com
 
 
-7] Add user e.g email:admin@example.com password:admin@123
+7] Add user (e.g email:admin@example.com password:admin@123)
 
 docker exec -it james java -jar /root/james-cli.jar adduser admin@example.com admin@123
 

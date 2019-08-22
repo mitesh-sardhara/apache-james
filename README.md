@@ -1,25 +1,33 @@
 # apache-james
-Apache James - Docker Setup
+Apache James - Base Development Docker Setup
 
-# Retrive docker compose 
-wget https://raw.githubusercontent.com/apache/james-project/master/dockerfiles/run/docker-compose.yml
+# Follow the steps.
+1] Clone git repo inside 'james' folder. So the structure will be james/james-project
+git clone https://github.com/apache/james-project.git
 
-# start the services
-docker-compose up -d
+2] Clone this git repo anywhere and put .sh files inside 'script' folder. So, the structure will be james/script
+git clone https://github.com/mitesh-sardhara/apache-james
 
-# list domains
-docker exec -it james java -jar /root/james-cli.jar listdomains
+3] Change the path of working directory in start-setup.sh file
 
-# add domain
+4] Run start-setup 
+./start-setup.sh
+
+5] Check for list of domains
+./list-domains.sh
+
+6] Add domain e.g. example.com
 docker exec -it james java -jar /root/james-cli.jar adddomain example.com
 
-# add User
+7] Add user e.g email:admin@example.com password:admin@123
 docker exec -it james java -jar /root/james-cli.jar adduser admin@example.com admin@123
 
 
-# Start the process according to the file
+# Follow below steps to stop running servicees and remove containers (If Required)
+1] Stop running services
+./stop-setup.sh
+ 
+2] Stop running services &  remove the containers
+./rm-setup.sh
 
-1] start-setup.sh  ---  Retrive docker and start the services
-2] list-domains.sh  ---  shows the list of domains 
-3] stop-setup.sh  ---  Stops the services 
-4] rm-setup.sh  ---  first it stops the services and then removes the containers
+

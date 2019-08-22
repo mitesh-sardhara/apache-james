@@ -16,7 +16,7 @@ git clone https://github.com/mitesh-sardhara/apache-james
 5] Check for list of domains
 ./list-domains.sh
 
-6] Add domain e.g. example.com
+6] Add domain (e.g. example.com)
 docker exec -it james java -jar /root/james-cli.jar adddomain example.com
 
 7] Add user e.g email:admin@example.com password:admin@123

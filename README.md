@@ -52,8 +52,11 @@ docker exec -it james java -jar /root/james-cli.jar adduser admin@example.com ad
 1] Edit the file etc/hosts to add the number of domains in it and below is an example :
    Ex:
        127.0.0.1       example.com
+       
        127.0.0.1       smtp.example.com
+       
        127.0.0.1       pop3.example.com
+       
        127.0.0.1       imap.example.com
        
  2] Now, open the Thunderbird and add new mail account

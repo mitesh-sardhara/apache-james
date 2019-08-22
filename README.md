@@ -23,7 +23,7 @@ docker exec -it james java -jar /root/james-cli.jar adddomain example.com
 docker exec -it james java -jar /root/james-cli.jar adduser admin@example.com admin@123
 
 
-# Follow below steps to stop running servicees and remove containers (If Required)
+# Follow below steps to stop running services & remove containers (If Required)
 1] Stop running services
 ./stop-setup.sh
  

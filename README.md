@@ -34,7 +34,7 @@ docker exec -it james java -jar /root/james-cli.jar adddomain example.com
 
 docker exec -it james java -jar /root/james-cli.jar adduser admin@example.com admin@123
 
-
+8] Create multiple domains and users by repeating the 6 and 7 steeps
 
 # Follow below steps to stop running services & remove containers (If Required)
 
@@ -46,5 +46,22 @@ docker exec -it james java -jar /root/james-cli.jar adduser admin@example.com ad
 2] Stop running services &  remove the containers
 
 ./rm-setup.sh
+
+# Follow below steps to configure Thunderbird Mail 
+
+1] Edit the file etc/hosts to add the number of domains in it and below is an example :
+   Ex:
+       127.0.0.1       example.com
+       127.0.0.1       smtp.example.com
+       127.0.0.1       pop3.example.com
+       127.0.0.1       imap.example.com
+       
+ 2] Now, open the Thunderbird and add new mail account
+ 
+ 3] Enter you email Id and password and then just click on connect. So by this way we need to connect as many users we had created above
+ 
+ 4] Now you can send emails to other users of different domains 
+ 
+ 
 
 
